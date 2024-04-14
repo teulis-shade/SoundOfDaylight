@@ -65,4 +65,9 @@ public class Interactable : MonoBehaviour
         anim.SetBool("fail", true);
         anim.SetBool("fail", false);
     }
+
+    public bool Check()
+    {
+        return interacted;
+    }
 }
