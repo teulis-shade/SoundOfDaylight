@@ -720,6 +720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverCursorTexture: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
+  hoverSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   prereqs: []
 --- !u!95 &1801556728
 Animator:
@@ -953,6 +955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverCursorTexture: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
+  hoverSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   prereqs:
   - {fileID: 1801556727}
 --- !u!95 &1826893611
