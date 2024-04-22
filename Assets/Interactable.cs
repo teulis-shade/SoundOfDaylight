@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
     private Sprite normalSprite;
     [SerializeField] private Sprite hoverSprite;
     [SerializeField] private List<Interactable> prereqs;
-    Animator anim;
+    protected Animator anim;
 
     private void Awake()
     {
@@ -64,7 +64,7 @@ public class Interactable : MonoBehaviour
         return true;
     }
 
-    private void Interact()
+    protected virtual void Interact()
     {
         interacted = true;
 
@@ -73,7 +73,7 @@ public class Interactable : MonoBehaviour
         sr.sprite = normalSprite;
     }
 
-    private void FailInteract()
+    protected void FailInteract()
     {
         anim.SetBool("fail", true);
         anim.SetBool("fail", false);
