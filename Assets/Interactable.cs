@@ -2,30 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.Rendering.Universal;
 
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Collider2D))]
 public class Interactable : MonoBehaviour
 {
     private bool hovering;
     private bool interacted;
     private SpriteRenderer sr;
     private Sprite normalSprite;
-    [SerializeField] private Sprite hoverSprite;
     [SerializeField] private List<Interactable> prereqs;
     protected Animator anim;
+    private GameObject lighting;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         normalSprite = sr.sprite;
+        lighting = transform.GetChild(0).gameObject;
+        lighting.SetActive(false);
+
     }
     private void OnMouseExit()
     {
         hovering = false;
-        sr.sprite = normalSprite;
+        lighting.SetActive(false);
     }
 
     private void OnMouseEnter()
@@ -33,7 +38,7 @@ public class Interactable : MonoBehaviour
         hovering = true;
         if (!interacted)
         {
-            sr.sprite = hoverSprite;
+            lighting.SetActive(true);
         }
     }
 
