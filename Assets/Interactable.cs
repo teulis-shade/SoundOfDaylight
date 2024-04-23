@@ -25,6 +25,7 @@ public class Interactable : MonoBehaviour
         normalSprite = sr.sprite;
         lighting = transform.GetChild(0).gameObject;
         lighting.SetActive(false);
+        sr.sortingLayerName = "Interactable";
 
     }
     private void OnMouseExit()
