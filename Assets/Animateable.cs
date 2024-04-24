@@ -6,6 +6,7 @@ using UnityEngine;
 public class Animateable : MonoBehaviour
 {
     [SerializeField] private List<Interactable> prereqs;
+    [SerializeField] private string triggerName;
     private Dictionary<Interactable, bool> done;
     [SerializeField] private string triggerName;
     private Animator anim;
