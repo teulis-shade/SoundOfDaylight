@@ -12,8 +12,11 @@ public class Interactable : MonoBehaviour
 {
     private bool hovering;
     private bool interacted;
+
+
     private SpriteRenderer sr;
     private Sprite normalSprite;
+    [SerializeField] private Texture2D hoverCursorTexture;
     [SerializeField] private List<Interactable> prereqs;
     protected Animator anim;
     private GameObject lighting;
@@ -31,14 +34,18 @@ public class Interactable : MonoBehaviour
     private void OnMouseExit()
     {
         hovering = false;
+
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         lighting.SetActive(false);
     }
 
     private void OnMouseEnter()
     {
         hovering = true;
-        if (!interacted)
+        
+        if (!interacted && CheckInteraction())
         {
+            Cursor.SetCursor(hoverCursorTexture, Vector2.zero, CursorMode.Auto); // Set custom cursor
             lighting.SetActive(true);
         }
     }
@@ -77,6 +84,7 @@ public class Interactable : MonoBehaviour
         anim.SetBool("interact", true);
 
         sr.sprite = normalSprite;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     protected void FailInteract()
