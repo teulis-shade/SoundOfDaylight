@@ -20,6 +20,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private List<Interactable> prereqs;
     protected Animator anim;
     private GameObject lighting;
+    private CursorHolder cursor;
 
     private void Awake()
     {
@@ -27,15 +28,16 @@ public class Interactable : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         normalSprite = sr.sprite;
         //lighting = transform.GetChild(0).gameObject;
-        lighting.SetActive(false);
+        //lighting.SetActive(false);
         sr.sortingLayerName = "Interactable";
+        cursor = FindObjectOfType<CursorHolder>();
 
     }
     private void OnMouseExit()
     {
         hovering = false;
         //lighting.SetActive(false);
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursor.cursorNormal, Vector2.zero, CursorMode.Auto);
     }
 
     private void OnMouseEnter()
@@ -44,7 +46,7 @@ public class Interactable : MonoBehaviour
         if (!interacted && CheckInteraction())
         {
             //lighting.SetActive(true);
-            Cursor.SetCursor(hoverCursorTexture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(cursor.cursorHighlight, Vector2.zero, CursorMode.Auto);
         }
     }
 
