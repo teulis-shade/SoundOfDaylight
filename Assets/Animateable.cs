@@ -6,11 +6,13 @@ using UnityEngine;
 public class Animateable : MonoBehaviour
 {
     [SerializeField] private List<Interactable> prereqs;
+    [SerializeField] private string triggerName;
     private Dictionary<Interactable, bool> done;
     private Animator anim;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        done = new Dictionary<Interactable, bool>();
         foreach (Interactable i in prereqs)
         {
             done.Add(i, false);
@@ -23,7 +25,7 @@ public class Animateable : MonoBehaviour
         {
             if (!done[i] && i.Check())
             {
-                anim.SetTrigger("animate");
+                anim.SetTrigger(triggerName);
             }
         }
     }
