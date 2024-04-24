@@ -24,7 +24,7 @@ public class Interactable : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         normalSprite = sr.sprite;
-        lighting = transform.GetChild(0).gameObject;
+        //lighting = transform.GetChild(0).gameObject;
         lighting.SetActive(false);
         sr.sortingLayerName = "Interactable";
 
@@ -32,7 +32,7 @@ public class Interactable : MonoBehaviour
     private void OnMouseExit()
     {
         hovering = false;
-        lighting.SetActive(false);
+        //lighting.SetActive(false);
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
@@ -41,7 +41,7 @@ public class Interactable : MonoBehaviour
         hovering = true;
         if (!interacted && CheckInteraction())
         {
-            lighting.SetActive(true);
+            //lighting.SetActive(true);
             Cursor.SetCursor(hoverCursorTexture, Vector2.zero, CursorMode.Auto);
         }
     }
