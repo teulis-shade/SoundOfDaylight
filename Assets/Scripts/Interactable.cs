@@ -16,7 +16,6 @@ public class Interactable : MonoBehaviour
 
     private SpriteRenderer sr;
     private Sprite normalSprite;
-    [SerializeField] private Texture2D hoverCursorTexture;
     [SerializeField] private List<Interactable> prereqs;
     protected Animator anim;
     private GameObject lighting;
