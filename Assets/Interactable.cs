@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.Rendering.Universal;
 
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Collider2D))]
 public class Interactable : MonoBehaviour
 {
     private bool hovering;
@@ -15,23 +17,26 @@ public class Interactable : MonoBehaviour
     private SpriteRenderer sr;
     private Sprite normalSprite;
     [SerializeField] private Texture2D hoverCursorTexture;
-    [SerializeField] private Sprite hoverSprite;
-
     [SerializeField] private List<Interactable> prereqs;
-    Animator anim;
+    protected Animator anim;
+    private GameObject lighting;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         normalSprite = sr.sprite;
+        lighting = transform.GetChild(0).gameObject;
+        lighting.SetActive(false);
+        sr.sortingLayerName = "Interactable";
+
     }
     private void OnMouseExit()
     {
         hovering = false;
-        sr.sprite = normalSprite;
 
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        lighting.SetActive(false);
     }
 
     private void OnMouseEnter()
@@ -40,8 +45,8 @@ public class Interactable : MonoBehaviour
         
         if (!interacted && CheckInteraction())
         {
-            sr.sprite = hoverSprite;
             Cursor.SetCursor(hoverCursorTexture, Vector2.zero, CursorMode.Auto); // Set custom cursor
+            lighting.SetActive(true);
         }
     }
 
@@ -72,7 +77,7 @@ public class Interactable : MonoBehaviour
         return true;
     }
 
-    private void Interact()
+    protected virtual void Interact()
     {
         interacted = true;
 
@@ -82,7 +87,7 @@ public class Interactable : MonoBehaviour
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
-    private void FailInteract()
+    protected void FailInteract()
     {
         anim.SetBool("fail", true);
         anim.SetBool("fail", false);
