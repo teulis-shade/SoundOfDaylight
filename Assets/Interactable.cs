@@ -12,6 +12,8 @@ public class Interactable : MonoBehaviour
 {
     private bool hovering;
     private bool interacted;
+
+
     private SpriteRenderer sr;
     private Sprite normalSprite;
     [SerializeField] private Texture2D hoverCursorTexture;
