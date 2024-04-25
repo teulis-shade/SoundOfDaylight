@@ -44,3 +44,6 @@ TagManager:
   - name: Interactable
     uniqueID: 1691740147
     locked: 0
+  - name: Popup
+    uniqueID: 1298314073
+    locked: 0

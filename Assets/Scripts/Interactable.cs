@@ -16,37 +16,36 @@ public class Interactable : MonoBehaviour
 
     private SpriteRenderer sr;
     private Sprite normalSprite;
-    [SerializeField] private Texture2D hoverCursorTexture;
     [SerializeField] private List<Interactable> prereqs;
     protected Animator anim;
     private GameObject lighting;
+    private CursorHolder cursor;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         normalSprite = sr.sprite;
-        lighting = transform.GetChild(0).gameObject;
-        lighting.SetActive(false);
+        //lighting = transform.GetChild(0).gameObject;
+        //lighting.SetActive(false);
         sr.sortingLayerName = "Interactable";
+        cursor = FindObjectOfType<CursorHolder>();
 
     }
     private void OnMouseExit()
     {
         hovering = false;
-
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        lighting.SetActive(false);
+        //lighting.SetActive(false);
+        Cursor.SetCursor(cursor.cursorNormal, Vector2.zero, CursorMode.Auto);
     }
 
     private void OnMouseEnter()
     {
         hovering = true;
-        
         if (!interacted && CheckInteraction())
         {
-            Cursor.SetCursor(hoverCursorTexture, Vector2.zero, CursorMode.Auto); // Set custom cursor
-            lighting.SetActive(true);
+            //lighting.SetActive(true);
+            Cursor.SetCursor(cursor.cursorHighlight, Vector2.zero, CursorMode.Auto);
         }
     }
 
