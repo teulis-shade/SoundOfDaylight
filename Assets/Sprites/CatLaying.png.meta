@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93a639d6c9860e84885a45351ebe4540
+guid: dfba6926c3c0c71488c0f866f8480bed
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a945ba27b5ee9f5419095e60864bfc51
-      internalID: -521206276
+      spriteID: c71d9797c39dd174e8ebf69d61364100
+      internalID: -2059349968
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ee5c93952031b49b4f7fcd3f2027eb
-      internalID: -22161209
+      spriteID: 1915babfb08ae7a4d886ed8b3f75d5a6
+      internalID: -931417276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10530dee21db24049aaa8678ec66fd96
+      internalID: -630933956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e0eedcb6bbe294fa91e0498595452f
+      internalID: -1765325083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152853352688f0e4e9c94e6e703c33be
+      internalID: 621857422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09528f0b620c464facf07a2d4b964fe
+      internalID: -654101582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2169776de9a18b4eafd8ba58fc41a39
+      internalID: -1583595599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 3
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc91959beb50298409aac9d2ac361339
+      internalID: -1527307992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f66f5e928ad6a4497616ec0ffc7bda
+      internalID: -766502242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 6
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafec3ca8d69fd64fb00e72bcc7955f6
+      internalID: 942678841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 4
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3581448104605ed4597b34752c62c8ce
+      internalID: -727549500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19dc72d6efde174d9be3fd030ee87a7
+      internalID: 1501294298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatLaying_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba91a7f7b4e4817448e73c474f6f4673
+      internalID: -1930660188
       vertices: []
       indices: 
       edges: []
@@ -162,8 +393,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CatLaying_0: -521206276
-      CatLaying_1: -22161209
+      CatLaying_0: -2059349968
+      CatLaying_1: -931417276
+      CatLaying_10: -727549500
+      CatLaying_11: 1501294298
+      CatLaying_12: -1930660188
+      CatLaying_2: -630933956
+      CatLaying_3: -1765325083
+      CatLaying_4: 621857422
+      CatLaying_5: -654101582
+      CatLaying_6: -1583595599
+      CatLaying_7: -1527307992
+      CatLaying_8: -766502242
+      CatLaying_9: 942678841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
