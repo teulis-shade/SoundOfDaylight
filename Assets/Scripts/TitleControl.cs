@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class TitleControl : MonoBehaviour
 {
-    private void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
     public void StartGame()
     {
         SceneManager.LoadScene(2);
