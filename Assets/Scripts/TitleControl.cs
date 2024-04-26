@@ -20,8 +20,14 @@ public class TitleControl : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void NextScene()
+    public void NextSceneOnDelay(float delay)
     {
+        StartCoroutine(loadScene(delay));
+    }
+
+    public IEnumerator loadScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
