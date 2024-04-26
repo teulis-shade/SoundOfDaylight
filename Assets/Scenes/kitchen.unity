@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
   prereqs:
   - {fileID: 1920570336}
   interactSound: {fileID: 0}
@@ -405,6 +406,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &459803060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459803062}
+  - component: {fileID: 459803061}
+  m_Layer: 0
+  m_Name: transitionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &459803061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459803060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d061851157e27344ae1b80c1947ac18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &459803062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459803060}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5580034, y: -0.62298656, z: -4.001278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &494776068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,6 +2135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a0b15eb4a49bd4baa29b8c2ed9dfd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
   prereqs: []
   interactSound: {fileID: 0}
   repeatSound: 0
@@ -2440,6 +2486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a0b15eb4a49bd4baa29b8c2ed9dfd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
   prereqs: []
   interactSound: {fileID: 0}
   repeatSound: 0
@@ -2707,6 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
   prereqs:
   - {fileID: 191172238}
   interactSound: {fileID: 8300000, guid: f045dadc05ee444469ed21a369d48337, type: 3}
@@ -3447,6 +3495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
   prereqs: []
   interactSound: {fileID: 8300000, guid: 8964e4926a2abed4ea1704eb70b5c8fd, type: 3}
   repeatSound: 0
@@ -3811,6 +3860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 5
   prereqs:
   - {fileID: 1535294342}
   interactSound: {fileID: 0}
@@ -4249,3 +4299,4 @@ SceneRoots:
   - {fileID: 1413774805}
   - {fileID: 1667103738}
   - {fileID: 975133560}
+  - {fileID: 459803062}
