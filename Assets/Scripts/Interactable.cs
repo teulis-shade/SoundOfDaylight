@@ -8,15 +8,20 @@ using UnityEngine.Rendering.Universal;
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(AudioSource))]
 public class Interactable : MonoBehaviour
 {
     private bool hovering;
     private bool interacted;
 
+    [SerializeField] private float waitTime = 0f;
+
 
     private SpriteRenderer sr;
     private Sprite normalSprite;
     [SerializeField] private List<Interactable> prereqs;
+    [SerializeField] private AudioClip interactSound;
+    [SerializeField] private bool repeatSound;
     protected Animator anim;
     private GameObject lighting;
     private CursorHolder cursor;
@@ -30,6 +35,9 @@ public class Interactable : MonoBehaviour
         //lighting.SetActive(false);
         sr.sortingLayerName = "Interactable";
         cursor = FindObjectOfType<CursorHolder>();
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().loop = repeatSound;
+        GetComponent<AudioSource>().clip = interactSound;
 
     }
     private void OnMouseExit()
@@ -84,6 +92,13 @@ public class Interactable : MonoBehaviour
 
         sr.sprite = normalSprite;
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+
+        GetComponent<AudioSource>().Play();
+
+        if (waitTime != 0)
+        {
+            FindObjectOfType<TitleControl>().NextSceneOnDelay(waitTime);
+        }
     }
 
     protected void FailInteract()
