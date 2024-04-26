@@ -7,7 +7,7 @@ public class TitleControl : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
@@ -17,7 +17,7 @@ public class TitleControl : MonoBehaviour
     
     public void Credits()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(6);
     }
 
     public void NextSceneOnDelay(float delay)
