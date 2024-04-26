@@ -385,7 +385,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 752797971}
   - {fileID: 1427822003}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1165,8 +1164,8 @@ Transform:
   m_GameObject: {fileID: 159022682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: 0.0455, z: 0}
-  m_LocalScale: {x: 17.9122, y: 9.672066, z: 1}
+  m_LocalPosition: {x: 0.29, y: 0.1285, z: 0}
+  m_LocalScale: {x: 17.9122, y: -10.212083, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1661,6 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 8147599}
+  block: {fileID: 752797970}
 --- !u!1 &266493210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,7 +3217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 752797971}
   - component: {fileID: 752797973}
-  - component: {fileID: 752797972}
   m_Layer: 0
   m_Name: introcover
   m_TagString: Untagged
@@ -3234,33 +3233,12 @@ Transform:
   m_GameObject: {fileID: 752797970}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -971.2, y: -539.45, z: 0}
+  m_LocalPosition: {x: -11.200012, y: 0.5499878, z: 0}
   m_LocalScale: {x: 5.2440495, y: 5.0014715, z: 2.526383}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8147603}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &752797972
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752797970}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6de4013b73587840b5bac4ba30a2990, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &752797973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7255,7 +7233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbd50ee0e2cdb2428584f45b409ba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 3
+  waitTime: 5
   prereqs:
   - {fileID: 29587944}
   interactSound: {fileID: 0}
@@ -8620,6 +8598,7 @@ SceneRoots:
   - {fileID: 1038545185}
   - {fileID: 24013386}
   - {fileID: 396626865}
+  - {fileID: 752797971}
   - {fileID: 8147603}
   - {fileID: 1349201479}
   - {fileID: 328016392}
