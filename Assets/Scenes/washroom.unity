@@ -4478,7 +4478,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.030811548, y: 0.16592318}
+  m_Offset: {x: -0.005176723, y: -0.007187128}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4489,7 +4489,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6665773, y: 2.3990774}
+  m_Size: {x: 1.0338036, y: 1.0016977}
   m_EdgeRadius: 0
 --- !u!212 &1553545264
 SpriteRenderer:
@@ -4552,8 +4552,8 @@ Transform:
   m_GameObject: {fileID: 1553545260}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.002521085, w: 0.99999684}
-  m_LocalPosition: {x: -0.809, y: -2.557, z: 0}
-  m_LocalScale: {x: 0.28882498, y: 0.2541994, z: 2.426}
+  m_LocalPosition: {x: -0.9019, y: -2.4788, z: 0}
+  m_LocalScale: {x: 1.1131271, y: 0.8464578, z: 2.426}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6871,6 +6871,7 @@ GameObject:
   - component: {fileID: 2009124040}
   - component: {fileID: 2009124039}
   - component: {fileID: 2009124044}
+  - component: {fileID: 2009124045}
   m_Layer: 0
   m_Name: pants
   m_TagString: Untagged
@@ -6905,7 +6906,7 @@ Animator:
   m_GameObject: {fileID: 2009124038}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7892b3809d235e42851f44db6d3b5b3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6999,8 +7000,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1691740147
+  m_SortingLayer: 1
   m_SortingOrder: 8
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -7022,7 +7023,7 @@ Transform:
   m_GameObject: {fileID: 2009124038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6007, y: -2.3372, z: 0}
+  m_LocalPosition: {x: 2.28, y: -6.5, z: 0}
   m_LocalScale: {x: 0.6286, y: 0.6816198, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7124,6 +7125,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2009124045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009124038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cde19a7b290d1744a5c1d7a459fdbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prereqs:
+  - {fileID: 1553545268}
+  triggerName: enablePants
 --- !u!1 &2042201735
 GameObject:
   m_ObjectHideFlags: 0
