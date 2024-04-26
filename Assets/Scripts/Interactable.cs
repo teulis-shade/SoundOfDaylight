@@ -14,6 +14,8 @@ public class Interactable : MonoBehaviour
     private bool hovering;
     private bool interacted;
 
+    [SerializeField] private float waitTime = 0f;
+
 
     private SpriteRenderer sr;
     private Sprite normalSprite;
@@ -92,6 +94,11 @@ public class Interactable : MonoBehaviour
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
 
         GetComponent<AudioSource>().Play();
+
+        if (waitTime != 0)
+        {
+            FindObjectOfType<TitleControl>().NextSceneOnDelay(waitTime);
+        }
     }
 
     protected void FailInteract()
