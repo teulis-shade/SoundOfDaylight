@@ -1164,8 +1164,8 @@ Transform:
   m_GameObject: {fileID: 159022682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: -0.0065, z: 0}
-  m_LocalScale: {x: 17.9122, y: -9.734169, z: 1}
+  m_LocalPosition: {x: 0.29, y: 4.871, z: 0}
+  m_LocalScale: {x: 17.9122, y: 0.020441754, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6997,6 +6997,7 @@ GameObject:
   - component: {fileID: 1828980536}
   - component: {fileID: 1828980539}
   - component: {fileID: 1828980540}
+  - component: {fileID: 1828980541}
   m_Layer: 0
   m_Name: Vent
   m_TagString: Untagged
@@ -7250,6 +7251,18 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!114 &1828980540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828980533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d061851157e27344ae1b80c1947ac18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1828980541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
